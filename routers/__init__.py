@@ -14,7 +14,7 @@ def create_app():
         allow_methods=["*"],
         allow_headers=["*"],
     )
-
+#1
     app.include_router(get_data)  # todo: add router here
 
     @app.get("/")
