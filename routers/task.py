@@ -34,4 +34,4 @@ async def delete_student(id: int):
     query = """DELETE FROM student WHERE id = $1 RETURNING id; """
 
     d_student_id = await execute_query(query, id)
-    return {"id": d_student_id, "message": "Student deleted successfully"}
+    return {"id": d_student_id}
